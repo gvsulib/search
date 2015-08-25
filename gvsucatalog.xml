@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>GVSU Libraries Catalog</ShortName>
+  <Description>Search GVSU library Catalog</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">http://gvsulib.com/labs/img/favicon.ico</Image>
+  <Url type="text/html" method="POST" template="http://library.catalog.gvsu.edu/search">
+	<Param name="searchtype" value="X"/>
+	<Param name="searcharg" value="{searchTerms}"/>
+  </Url>
+<Url type="application/opensearchdescription+xml" rel="self" template="http://gvsulib.com/labs/search/gvsucatalog.xml" />
+  <moz:SearchForm>http://library.catalog.gvsu.edu</moz:SearchForm>
+</OpenSearchDescription>
